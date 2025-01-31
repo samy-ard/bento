@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/static/DMSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/static/DMSans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/static/DMSans-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --font-family-alt: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+  --grey: hsl(0, 0%, 96%);
+}
+
+body {
+  margin: 0;
+  color: var(--black);
+  font-size: 16px;
+  font-family: var(--font-family, var(--font-family-alt, sans-serif));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  margin: 0;
+  line-height: 1;
+  font-weight: 500;
+}
+
+h1,
+.h1 {
+  font-size: 46px;
+  line-height: 0.9130434782608695;
+}
+
+h2,
+.h2 {
+  font-size: 30px;
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bg-purple-500 {
+  background-color: var(--purple-500);
+}
+
+.bg-purple-100 {
+  background-color: var(--purple-100);
+}
+
+.bg-yellow-500 {
+  background-color: var(--yellow-500);
+}
+
+.bg-yellow-100 {
+  background-color: var(--yellow-100);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.text-purple-500 {
+  color: var(--purple-500);
+}
+
+.text-yellow-500 {
+  color: var(--yellow-500);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.page {
+  background-color: var(--grey);
+}
+
+.bento {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  padding: 32px 15px 39px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-inline: 15px;
+  border-radius: 12px;
+}
+
+.card-title {
+  letter-spacing: -1px;
+}
+
+.card-one {
+  padding: 40px 30px 42px;
+}
+
+.card-one .card-title {
+  letter-spacing: -2px;
+}
+
+.card-one img {
+  margin: 24px auto 8px;
+  width: 192px;
+}
+
+.card-two {
+  padding: 18px 12px 14px 17px;
+}
+
+.card-two img {
+  width: 316px;
+  margin-bottom: 15px;
+}
+
+.card-three {
+  padding: 18px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-three .card-title {
+  margin-bottom: 14px;
+}
+
+.card-three img {
+  width: 208px;
+}
+
+.card-four {
+  text-align: center;
+  padding: 32px 18px;
+}
+
+.card-four .card-title {
+  margin-bottom: 24px;
+}
+
+.card-four img {
+  width: 306px;
+  margin: 24px auto;
+}
+
+.card-four p {
+  padding-inline: 8px;
+  line-height: 20px;
+}
+
+.card-five {
+  text-align: center;
+  padding: 24px 46px;
+}
+
+.card-five img {
+  width: 228px;
+  margin-inline: auto;
+}
+
+.card-five .card-title {
+  margin-top: 40px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+.card-six {
+  padding: 25px 25px;
+}
+
+.card-six .card-title {
+  margin-left: -4px;
+  margin-bottom: 13px;
+}
+
+.card-six img {
+  margin-top: 26px;
+  width: 179px;
+}
+
+.card-seven {
+  padding: 31px 34px;
+}
+
+.card-seven .card-title {
+  margin-bottom: 21px;
+}
+
+.card-seven img {
+  width: 191px;
+}
+
+.card-eight {
+  padding: 26px;
+}
+
+.card-eight img {
+  margin-top: 20px;
+  width: 220px;
+}
+
+@media screen and (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  h2,
+  .h2 {
+    font-size: 40px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 32px;
+  }
+
+  .page {
+    padding-block: 83px;
+  }
+
+  .bento {
+    position: relative;
+    padding: 0;
+    max-width: 1120px;
+    margin: 0 auto;
+    height: 880px;
+  }
+
+  .card {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .card-seven {
+    top: 0;
+    left: 0;
+    width: calc((50% - 45px) / 2);
+    height: 415px;
+    padding: 76px 32px;
+  }
+
+  .card-seven .card-title {
+    line-height: 0.925;
+    letter-spacing: -4px;
+  }
+
+  .card-one {
+    top: 0;
+    left: calc(25% + (15px / 2));
+    width: calc(50% - 15px);
+    height: 325px;
+    padding-block: 60px;
+  }
+
+  .card-four {
+    top: 0;
+    right: 0;
+    width: calc((50% - 45px) / 2);
+    height: 605px;
+    text-align: left;
+    padding: 48px 34px;
+  }
+
+  .card-four .card-title {
+    letter-spacing: -2px;
+    line-height: 0.9375;
+    margin-bottom: 22px;
+  }
+
+  .card-four img {
+    width: 357px;
+    margin-top: 0;
+  }
+
+  .card-four p {
+    padding: 0;
+  }
+
+  .card-two {
+    top: 355px;
+    left: calc(25% + (15px / 2));
+    width: calc((50% - 45px) / 2);
+    height: 250px;
+    padding: 25px 24px;
+  }
+
+  .card-two img {
+    margin-bottom: 20px;
+  }
+
+  .card-two .card-title {
+    letter-spacing: -2px;
+    line-height: 0.875;
+  }
+
+  .card-eight {
+    top: 445px;
+    left: 0;
+    width: calc((50% - 45px) / 2);
+    padding: 25px 26px 23px 24px;
+  }
+
+  .card-eight .card-title {
+    letter-spacing: -4px;
+    line-height: 0.9;
+  }
+
+  .card-eight img {
+    margin-top: 56px;
+  }
+
+  .card-three {
+    top: 355px;
+    left: calc(50% + 15px);
+    width: calc((50% - 45px) / 2);
+    height: 250px;
+    padding: 25px;
+  }
+
+  .card-three .card-title {
+    line-height: 0.875;
+    letter-spacing: -2px;
+    margin-bottom: 18px;
+  }
+
+  .card-six {
+    left: calc(25% + (15px / 2));
+    bottom: 0;
+    width: calc((50% - 45px) / 2);
+    height: 245px;
+  }
+
+  .card-six img {
+    margin-top: 39px;
+  }
+
+  .card-five {
+    right: 0;
+    bottom: 0;
+    width: calc(50% - 15px);
+    height: 245px;
+    text-align: left;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 22px 25px;
+  }
+
+  .card-five .card-title {
+    margin-top: 0;
+    line-height: 0.9;
+    letter-spacing: -2px;
+  }
+}
