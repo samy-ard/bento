@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/samy-ard/bento)
-- Live Site URL: [live](https:/samy-ard.github.io/bento/)
+- Live Site URL: [live](https://samy-ard.github.io/bento/)
 
 ## My process
 
